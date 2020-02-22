@@ -1,0 +1,19 @@
+{
+  "name": "newsreport",
+  "version": "1.0.0",
+  "description": "News Report site with analytics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CafeManager/NewsReport.git"
+  },
+  "author": "Kevin Flores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CafeManager/NewsReport/issues"
+  },
+  "homepage": "https://github.com/CafeManager/NewsReport#readme"
+}
