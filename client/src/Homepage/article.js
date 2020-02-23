@@ -1,15 +1,31 @@
 import React from 'react';
-import {Card, Grid} from '@material-ui/core'
-import { createStyles } from '@material-ui/styles'
+import { Card, Grid, Avatar } from '@material-ui/core'
+import { makeStyles } from '@material-ui/styles'
 
-const useStyles = createStyles(
-    
-)
-export default function Articles() {
-    return(
+export default function Article() {
+
+    const useStyles = makeStyles({
+        cardStyles: {
+            padding: '10rem',
+            margin: '3rem',
+            position: 'relative'
+        },
+        AvatarStyles: {
+            position: 'absolute',
+            top: '0%',
+            left: '0%',
+            height: '30%',
+            width: '30%'
+        }
+    })
+
+    const classes = useStyles();
+    return (
         <Grid container justify="center">
             <Grid item>
-                <Card>BREAKING NEWS: WALLET BURNS IN RIVER</Card>
+                <Card classes={{ root: classes.cardStyles }}>
+                    <Avatar classes={{ root: classes.AvatarStyles }} src="/images/cowboy.jpg" />
+                    BREAKING NEWS: WALLET BURNS IN RIVER</Card>
             </Grid>
         </Grid>
     )

@@ -2,8 +2,9 @@ import React from 'react';
 import './App.css';
 import Tooltip from '@material-ui/core/Tooltip';
 import { makeStyles } from '@material-ui/core/styles';
-import { Button, Grid, AppBar, IconButton, Toolbar, Typography } from '@material-ui/core';
-import { textbody, Card} from './Homepage/index'
+import { Button, Grid, AppBar, IconButton, Toolbar, Typography, Card } from '@material-ui/core';
+import { Usercontent } from './Homepage/index'
+import { Test } from './test'
 
 
 const useStyles = makeStyles(theme => ({
@@ -22,12 +23,11 @@ const useStyles = makeStyles(theme => ({
 function App() {
   const classes = useStyles();
 
-    return (
-      <div className={classes.root}>
+  return (
+    <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            
           </IconButton>
           <Typography variant="h6" >
             News
@@ -37,15 +37,18 @@ function App() {
       </AppBar>
       <Grid container justify="center">
         <Grid item>
-          <Tooltip title="Hi there!" className={classes.root}  placement="top"><Button>Hello, welcome to my news site!</Button></Tooltip>
+          <Tooltip title="Hi there!" className={classes.root} placement="top"><Button>Hello, welcome to my news site!</Button></Tooltip>
         </Grid>
       </Grid>
-      <Card/>
-      
-      </div>
-     
-    );
-  
+      <Card />
+      <Usercontent />
+
+
+
+    </div>
+
+  );
+
 }
 
 export default App;
