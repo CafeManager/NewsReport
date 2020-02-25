@@ -1,6 +1,4 @@
-import Article from './article'
-import { Textbody } from './textbody'
-import Usercontent from './usercontent'
-export { Usercontent }
-export { Article }
-export { Textbody } 
+import Article from './Article'
+import { Textbody } from './Textbody'
+import Usercontent from './Usercontent'
+export { Textbody, Article, Usercontent } 
